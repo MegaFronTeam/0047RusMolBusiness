@@ -1,7 +1,7 @@
 "use strict";
 
-import Swiper from '../libs/swiper/swiper-bundle.min.mjs';
-import JSCCommon from "./JSCCommon.js";
+// import Swiper from '../libs/swiper/swiper-bundle.min.mjs';
+// import JSCCommon from "./JSCCommon.js";
 
 const $ = jQuery;
 
@@ -60,8 +60,6 @@ function eventHandler() {
 		slideToClickedSlide: true,
 		freeModeMomentum: true,
 	});
-
-	
 }
 if (document.readyState !== "loading") {
 	eventHandler();
