@@ -1,3 +1,3 @@
 ### Pages
-1. <https://megafronteam.github.io/0047RusMolBusiness/>
-2. <https://megafronteam.github.io/0047RusMolBusiness/00-modal.html>
+1. <https://megafronteam.github.io/0047RusMolBusiness/public/>
+2. <https://megafronteam.github.io/0047RusMolBusiness/public/00-modal.html>
