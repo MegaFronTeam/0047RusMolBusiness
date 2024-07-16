@@ -1,0 +1,19 @@
+mixin sParticipants(data)
+	// start sParticipants
+	+b.SECTION.sParticipants.section#sParticipants&attributes(attributes)
+		.container
+			+img('img/sParticip-bg-1.png').bg-1
+			+b.section-title
+				h2 Кто может участвовать?
+				p Молодые предприниматели России в возрасте от 18 до 35 лет, которые:
+
+			+participantCard('Зарегистрированы как индивидуальные предприниматели и являются субъектами МСП')
+			+participantCard('Руководители или учредители юридических лиц, являющихся субъектами МСП')
+			+participantCard('Имеют опыт ведения предпринимательской деятельности более 1 года')
+			+participantCard('Ориентированы на масштабирование своего бизнеса и выход на новые рынки')
+	// end sParticipants
+
+mixin participantCard(text)
+	+b.participant-card
+		.wrap: +icon('tick')
+		p= text

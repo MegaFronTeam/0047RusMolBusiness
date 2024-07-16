@@ -1,12 +1,8 @@
 // start .headerBlock
 .headerBlock {
 	--sPT: #{rem(54)};
-	// --sPB: #{rem()};
+	--sPB: #{rem(77)};
 	--sTPB: #{rem(20)};
-
-	h1 {
-    text-transform: uppercase;
-  }
 
 	&__row{
 		// --bs-gutter-x: #{rem()};
