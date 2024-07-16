@@ -60,6 +60,17 @@ function eventHandler() {
 		slideToClickedSlide: true,
 		freeModeMomentum: true,
 	});
+
+	const partnersSwiper = document.querySelector('.sPartners__slider--js');
+	new Swiper(partnersSwiper.querySelector('.swiper'), {
+		spaceBetween: 63,
+		slidesPerView: "auto",
+		loop: true,
+		navigation: {
+			nextEl: partnersSwiper.querySelector(".swiper-button-next"),
+			prevEl: partnersSwiper.querySelector(".swiper-button-prev"),
+		}
+	});
 }
 if (document.readyState !== "loading") {
 	eventHandler();

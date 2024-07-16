@@ -8,12 +8,12 @@
 		.bg-1 {
 			position: absolute;
 			top: rem(177);
-			right: rem(215);
+			right: rem(207.800);
 			z-index: -1;
 		}
 		.bg-2 {
 			position: absolute;
-			left: 0;
+			left: rem(-239.800);
 			top: rem(90);
 			z-index: -1;
 		}
@@ -21,42 +21,48 @@
 			position: absolute;
 			z-index: -1;
 			top: rem(886);
-			right: 0;
+			right: rem(-31);
 		}
 		.bg-4 {
 			position: absolute;
 			z-index: -1;
-			left: 0;
+			left: rem(-82.600);
 			top: rem(1344);
 		}
 		.bg-5 {
 			position: absolute;
 			z-index: -1;
-			right: 0;
+			right: rem(-171.600);
 			top: rem(1746);
 		}
 		.bg-6 {
 			position: absolute;
 			z-index: -1;
-			left: 0;
+			left: rem(-234.600);
 			top: rem(2421);
 		}
 		.bg-7 {
 			position: absolute;
-			z-index: 1;
-			right: 0;
+			right: rem(-198.200);
 			top: rem(2553);
+			z-index: -1;
+			@include media-breakpoint-up(xl) {
+				z-index: 1;
+			}
 		}
 		.bg-8 {
 			position: absolute;
-			z-index: 1;
-			left: 0;
+			left: rem(-180);
 			top: rem(914);
+			z-index: -1;
+			@include media-breakpoint-up(xl) {
+				z-index: 1;
+			}
 		}
 		.bg-9 {
 			position: absolute;
 			z-index: -1;
-			right: 0;
+			right: rem(-144);
 			top: rem(1288);
 		}
 	}
@@ -73,7 +79,7 @@
 				margin-bottom: rem(80);
 			}
 			@include media-breakpoint-up(xl) {
-				margin-bottom: rem(128);
+				margin-bottom: rem(120.800);
 			}
 		}
 		.row {
@@ -83,6 +89,17 @@
 			align-items: center;
 			@include media-breakpoint-up(xl) {
 				flex-direction: row;
+			}
+		}
+		&:nth-of-type(3), 
+		&:nth-of-type(4) {
+			.sMission__img-wrap {
+				--ratio: 496/420;
+			}
+		}
+		&:nth-of-type(4) {
+			.sMission__content p {
+				max-width: rem(629);
 			}
 		}
 		&:nth-child(odd) {
@@ -99,6 +116,16 @@
 						padding: rem(48) rem(24) rem(90) rem(84);
 						margin-right: auto;
 						margin-left: rem(-60);
+					}
+					h3 {
+						@include media-breakpoint-up(xl) {
+							flex-direction: row-reverse;
+							justify-content: flex-end;
+							img {
+								margin-right: 0;
+								margin-left: rem(12);
+							}
+						}
 					}
 				}
 				&__img-wrap {
