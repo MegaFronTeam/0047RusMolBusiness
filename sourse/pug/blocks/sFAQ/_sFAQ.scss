@@ -13,7 +13,7 @@
 	}
 	.dd-group {
 		&__item {
-			max-width: rem();
+			// max-width: rem();
 		}
 	}
 	@include media-breakpoint-up(xl) {}

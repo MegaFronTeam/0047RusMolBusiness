@@ -2,11 +2,19 @@ mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-				p Lorem ipsum dolor sit amet.
-				+icon('telegram')
-				+iconC('telegram')
-			.row
-						
+			+e.item
+				+img("img/svg/bg-white.svg").bg
+
+				+e.row.row
+					.col-12.col-xl-7
+						+b.section-title
+							h1 Бизнес-миссии<br>в зарубежные страны
+							p  — это твой шанс вывести бизнес на новый уровень.
+						+e.wrap
+							p С июля по ноябрь 2024 года, Росмолодёжь.Бизнес приглашает молодых предпринимателей Российской Федерации, стремящихся к масштабированию своего бизнеса и поиску международных партнёров стать частью Программы по развитию молодёжного предпринимательства за рубежом. 
+							p Если ты активный бизнесмен с опытом ведения своего дела не менее одного года и желаешь расширить свои горизонты, эта программа точно для тебя.
+					.col-12.col-xl-5
+						+e.img-wrap
+							+img("img/svg/zig-prime.svg").zig-zag
+							+img("img/header-img.png", 'bg').img
 	// end headerBlock
