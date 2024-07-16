@@ -11,9 +11,11 @@
 	}
 	padding-top: rem(83);
   img {
-    margin-left: rem(28);
     width: rem(329);
     max-width: 100%;
+    @include media-breakpoint-up(lg) {
+      margin-left: rem(28);
+    }
   }
 
 
