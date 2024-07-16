@@ -71,8 +71,9 @@
 
   .map {
     position: absolute;
-    top: rem(62);
-    right: rem(100);
+    max-width: 100%;
+    bottom: 0;
+    left: 0;
     z-index: -1;
   }
 
