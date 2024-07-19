@@ -2,20 +2,20 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
-	&__row{
+	&__row {
+    @include media-breakpoint-up(lg) {
+      margin-left: rem(18);
+    }
 		// --bs-gutter-x: #{rem()};
 		// @include media-breakpoint-up(md) {
 			--bs-gutter-y: var(--bs-gutter-x);
 		// }
 
 	}
-	padding-top: rem(83);
+	padding-top: rem(52);
   img {
-    width: rem(329);
+    width: rem(278);
     max-width: 100%;
-    @include media-breakpoint-up(lg) {
-      margin-left: rem(28);
-    }
   }
 
 

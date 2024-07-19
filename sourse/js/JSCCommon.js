@@ -283,7 +283,7 @@ class JSCCommon {
 		);
 	}
 	static animateScroll() {
-		$(document).on("click", ".sChoise__btns-wrapper a, .sChoise .wrap", function () {
+		$(document).on("click", ".sChoise__btns-wrapper a, .sChoise .wrap, .menu li a", function () {
 			const elementClick = $(this).attr("href");
 			if (!document.querySelector(elementClick)) {
 				$(this).attr("href", "/" + elementClick);

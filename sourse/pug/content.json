@@ -1,12 +1,12 @@
 {
 	"nav":[
-		{ "name":"Наши работы", "url":"#"},
-		{	"name":"Цены", "url":"#"},
-		{"name":"Калькулятор", "url":"#"},
-		{"name":"Акции", "url":"#"} ,
+		{ "name":"Участники", "url":"#sParticipants"},
+		{	"name":"Страны бизнес-миссий", "url":"#sChoise"},
+		{"name":"Партнёры", "url":"#sPartners"},
+		{"name":"Вопросы", "url":"#sFAQ"} ,
 		{
-			"name":"Заказать", 
-			"url":"#"
+			"name":"Контакты", 
+			"url":"#sContact"
 			}
 	],
 	"social":[
