@@ -22,8 +22,8 @@ mixin top-nav()
 	+b.top-nav.block-with-lazy
 		.container
 			+e.row.row
-				a.col-auto(href='/')
-					+img('img/svg/logo.svg')
+				.col.col-logo
+					+e.logo(href="/"): +img('img/svg/logo.svg')
 				+e.col.col-12.order-lg-0.order-last
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner

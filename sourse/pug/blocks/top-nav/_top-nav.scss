@@ -6,11 +6,23 @@
     @include media-breakpoint-up(lg) {
       margin-left: rem(18);
     }
-		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-x: #{rem(10)};
 		// @include media-breakpoint-up(md) {
 			--bs-gutter-y: var(--bs-gutter-x);
 		// }
 
+	}
+
+	&__logo {
+		display: inline-block;
+    // max-width: 70%;
+	}
+  
+  &__col {
+		@include media-breakpoint-down(lg) {
+			padding: 0;
+			margin: 0;
+		}
 	}
 	padding-top: rem(52);
   img {
