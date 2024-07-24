@@ -3,43 +3,46 @@
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
 	&__row {
-    @include media-breakpoint-up(lg) {
-      margin-left: rem(18);
-    }
+		align-items: center;
+		@include media-breakpoint-up(lg) {
+			align-items: flex-start;
+			margin-left: rem(18);
+		}
 		// --bs-gutter-x: #{rem(10)};
 		// @include media-breakpoint-up(md) {
-			--bs-gutter-y: var(--bs-gutter-x);
+		--bs-gutter-y: var(--bs-gutter-x);
 		// }
-
 	}
 
 	&__logo {
 		display: inline-block;
-    // max-width: 70%;
+		// max-width: 70%;
 	}
-  
-  &__col {
+
+	&__col {
 		@include media-breakpoint-down(lg) {
 			padding: 0;
 			margin: 0;
 		}
 	}
 	padding-top: rem(52);
-  img {
-    width: rem(278);
-    max-width: 100%;
-  }
+	img {
+		width: rem(278);
+		max-width: 100%;
+	}
 
+	@include media-breakpoint-up(sm) {
+	}
 
-	@include media-breakpoint-up(sm) {}
-	
-	@include media-breakpoint-up(xs) {}
-	// 
-	@include media-breakpoint-between(md, xl) {}
-	// 
-	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-up(xs) {
+	}
+	//
+	@include media-breakpoint-between(md, xl) {
+	}
+	//
+	@include media-breakpoint-only(xs) {
+	}
 
-	@include media-breakpoint-down(xs) {}
+	@include media-breakpoint-down(xs) {
+	}
 }
-
-

@@ -22,7 +22,7 @@ mixin top-nav()
 	+b.top-nav.block-with-lazy
 		.container
 			+e.row.row
-				.col.col-logo
+				.col.col-logo.order-first
 					+e.logo(href="/"): +img('img/svg/logo.svg')
 				+e.col.col-12.order-lg-0.order-last
 					.menu-mobile.menu-mobile--js
@@ -31,5 +31,6 @@ mixin top-nav()
 							+mnu()
 				.col-auto.d-lg-none.ms-auto
 					+menu-toggle()
-
+				.col-md.text-md-end.order-md-first
+					small *Оператор ФГБУ «ЦСМС»
 	// end top-nav
