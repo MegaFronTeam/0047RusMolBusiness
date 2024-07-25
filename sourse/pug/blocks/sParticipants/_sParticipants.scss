@@ -37,6 +37,53 @@
     }
   }
 
+  .bg-2 {
+    @include media-breakpoint-up(lg) {
+      max-width: rem(453) !important;
+      top: auto;
+      bottom: 0;
+      right: rem(20);
+    }
+    @include media-breakpoint-up(xxl) {
+      max-width: rem(553) !important;
+    }
+
+  }
+  &__inner-wrapper {
+    position: relative;
+    padding-bottom: rem(46);
+  }
+
+  &__icons-wrap {
+    background: $primary;
+    color: $white;
+    border-radius: rem(30);
+    // margin-bottom: rem(47);
+      padding: rem(24);
+    @include media-breakpoint-up(md) {
+      border-radius: rem(60);
+      padding: rem(48) rem(52);
+    }
+  }
+
+  &__icons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:  rem(30) rem(20);
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .h4 {
+    margin-bottom: rem(30);
+  }
+
+
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
@@ -51,14 +98,11 @@
   max-width: max-content;
   gap: rem(10);
   border: 1px solid $gray-500;
-  border-radius: 20px;
+  border-radius: 30px;
   align-items: center;
   padding: rem(13);
   padding-right: rem(28);
   margin-bottom: rem(16);
-	@include media-breakpoint-up(md) {
-    border-radius: 100px;
-  }
 
   .wrap {
     border: 1px solid $gray-600;
@@ -81,5 +125,53 @@
   p {
     margin-bottom: 0;
     color: $gray-600;
+  }
+}
+
+#sParticipants2 {
+	--sPT: #{rem(56)};
+	--sPB: #{rem(44)};
+	--sTPB: #{rem(34)};
+
+  .participant-card:nth-child(2) {
+    max-width: rem(720);
+  }
+}
+
+.icon-card {
+  // max-width: rem(300);
+  // margin: auto;
+  //   @include media-breakpoint-up(sm) {
+  //   max-width: none;
+  //   }
+  &__icon-wrap {
+    margin-bottom: rem(18);
+    @include media-breakpoint-up(sm) {
+      min-height: rem(126);
+    }
+  }
+
+  &__text {
+    line-height: 1.2;
+    text-wrap: pretty;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &:nth-child(1) {
+      width: 18%;
+    }
+    &:nth-child(2) {
+      width: 20%;
+    }
+    &:nth-child(3),
+    &:nth-child(4) {
+      width: 25%;
+    }
+  }
+
+  .icon {
+    @include media-breakpoint-down(sm) {
+      font-size: rem(80);
+    }
   }
 }

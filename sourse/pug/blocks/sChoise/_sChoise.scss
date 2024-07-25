@@ -33,7 +33,7 @@
       grid-template-columns: repeat(2, 49%)
     }
     .btn:last-child {
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         width: rem(622);
         transform: translateX(-16px);
         max-width: 100%;

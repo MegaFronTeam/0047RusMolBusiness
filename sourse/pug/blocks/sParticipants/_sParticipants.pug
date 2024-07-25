@@ -17,3 +17,29 @@ mixin participantCard(text)
 	+b.participant-card
 		.wrap: +icon('tick')
 		p= text
+
+mixin sParticipants2(data)
+	// start sParticipants
+	+b.SECTION.sParticipants.section#sParticipants2&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Что тебя ждёт?
+			+e.inner-wrapper
+				+participantCard('Встречи с зарубежными предпринимателями')
+				+participantCard('Круглый стол с участием зарубежных предпринимателей, где ты узнаешь об условиях ведения экспортной деятельности российских компаний в стране')
+				+participantCard('Деловые встречи, где ты обсудишь возможности сотрудничества с профильными министерствами')
+				+participantCard('Бизнес-экскурсии, в рамках которых ты посетишь инновационные и креативные производства')
+				+img('img/sParticip-bg-2.png').bg-1.bg-2
+			+e.icons-wrap
+				.h4.fw-500 Потенциальные результаты бизнес-миссий:
+				+e.icons
+					+iconCard('increase', 'Масштабирование своего дела')
+					+iconCard('money', 'Увеличение прибыли и открытие новых рынков')
+					+iconCard('hands', 'Социально-экономические связи с зарубежными партнёрами')
+					+iconCard('links', 'Формирование партнёрской сети и подписание соглашений о сотрудничестве')
+	// end sParticipants
+
+mixin iconCard(icon, text)
+	+b.icon-card.text-center
+		+e.icon-wrap: +icon(`${icon}`)
+		+e.text= text

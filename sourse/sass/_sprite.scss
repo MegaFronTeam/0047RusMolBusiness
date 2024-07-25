@@ -37,15 +37,35 @@
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
 	width: calc(24 / #{$h} *1em );
 }
+.icon-hands {
+	$h: 111;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(118 / #{$h} *1em );
+}
+.icon-increase {
+	$h: 111;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(74 / #{$h} *1em );
+}
 .icon-instagram {
 	$h: 24;
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
 	width: calc(24 / #{$h} *1em );
 }
+.icon-links {
+	$h: 125;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(129 / #{$h} *1em );
+}
 .icon-message {
 	$h: 24;
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
 	width: calc(24 / #{$h} *1em );
+}
+.icon-money {
+	$h: 113;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(90 / #{$h} *1em );
 }
 .icon-phone {
 	$h: 24;
