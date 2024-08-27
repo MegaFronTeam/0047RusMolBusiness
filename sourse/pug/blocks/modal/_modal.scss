@@ -47,6 +47,9 @@
 	flex-direction: column;
 	color: #fff;
 	align-items: flex-start;
+  // a {
+  //   color: #fff;
+  // }
 	@include media-breakpoint-up(md) {
 		padding: rem(53) rem(76) rem(78);
 		flex-direction: row;
@@ -91,6 +94,7 @@
 
 		width: 100%;
 		max-width: rem(475);
+    margin-bottom: rem(10);
 		@include media-breakpoint-down(md) {
 			font-size: rem(16);
 		} 
