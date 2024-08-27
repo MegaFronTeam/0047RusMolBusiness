@@ -16,6 +16,11 @@
 			// max-width: rem();
 		}
 	}
+
+  ul {
+    margin-left: rem(20);
+    color: $white;
+  }
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
