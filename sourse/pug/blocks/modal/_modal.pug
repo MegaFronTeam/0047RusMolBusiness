@@ -6,10 +6,18 @@ mixin modal()
 			+img('img/flag-0-lg.png')
 			div
 				.h2 Бизнес-миссия<br/>в Республику Узбекистан 
+				p Программма бизнес-миссии ещё в разработке
+				//- +e.btn.btn.btn-primary(href='#' download) Скачать pdf
+				+e.btn.btn.btn-primary.btn_arrow(href='#') Хочу зарегистрироваться прямо сейчас!
+	// #modal-call
+	div(id="modal-link"  style="display: none" )
+		+b.modal-win
+			+img('img/flag-0-lg.png')
+			div
+				.h2 Бизнес-миссия<br/>в Республику Узбекистан 
 				//- p Программма бизнес-миссии ещё в разработке
 				+e.btn.btn.btn-primary(href='#' download) Скачать pdf
 				+e.btn.btn.btn-primary.btn_arrow(href='#') Хочу зарегистрироваться прямо сейчас!
 	// #modal-call
-
 	
 	// end modals
